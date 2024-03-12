@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+/*Permiten copiar y pegar código de forma sencilla 
+%estilos{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+}
+
+@extend %estilos; 
+*/
+header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+header .logoPagina {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin: 10px;
+}
+header .nombreSitio {
+  margin-left: 10px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  justify-content: center;
+  color: white;
+  -webkit-text-stroke-width: 2px; /* Ancho del contorno */
+  -webkit-text-stroke-color: black; /* Color del contorno */
+}
+header .logo {
+  width: 70px;
+}
+header nav {
+  margin-left: auto;
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
+}
+header nav li {
+  padding: 0 20px;
+  height: 100%; /* Ajustar el tamaño de los elementos li al 100% de la altura de la lista */
+  display: flex;
+  align-items: center;
+}
+header nav li a {
+  margin-right: 10px;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Cambia el color del texto de los enlaces */
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ajustar el tamaño de la lista al 100% de la altura del nav */
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+  background-color: black;
+  color: white;
+}
+
+.galeria {
+  background-color: black;
+  color: white;
+}
+
+.reglas {
+  background-color: black;
+  color: white;
+}
+
+.nosotros {
+  background-color: black;
+  color: white;
+}
+
+.contacto {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+footer img {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+/* Diseño Responsive */
+/* Mobile */
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  footer {
+    justify-content: center;
+  }
+  nav {
+    padding-top: 10px;
+    margin-left: unset;
+    transform: scale(0.7);
+  }
+  .logoPagina, .nombreSitio {
+    transform: scale(0.9);
+  }
+  input, textarea, .contactoTitulo {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

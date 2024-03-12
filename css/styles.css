@@ -1,0 +1,162 @@
+
+
+
+/* --- INDEX --- */
+
+.imagenPortada{
+    width: 100%;
+}
+
+.imagenPortada img{
+    width: 100%;
+    height: auto;
+}
+
+/* --- GALERIA --- */
+
+.galeria{
+    padding-top: 20px;/*Separa el main del header sin mostrar una franja blanca como ocurría con margin-top*/
+}
+
+.categorias {
+    padding: 20px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: /*Debe ajustarse a la cantidad de filas y columnas declaradas */
+        "img1 img1"
+        "img2 img3"
+        "img4 img4"
+        "img5 img6"; 
+        grid-gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.categoria1 {
+    grid-area: img1;
+}
+
+.categoria4 {
+    grid-area: img4;
+}
+
+.categoria {
+    display: flex; /* Usa flexbox para alinear contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    background-color: #f0f0f0; /* Color de fondo de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+    width: auto; /* Ajusta el ancho del contenedor */
+    height: auto; /* Ajusta el alto del contenedor */
+    background-image: url('https://wallpapercave.com/wp/JoFTfPX.jpg');
+    transition: transform 0.3s; /* Transición suave para el efecto de ampliación */
+}
+
+.categoria:hover {
+    transform: scale(1.05); /* Amplía la tarjeta en un 5% al hacer hover */
+    cursor: pointer; /* Cambia el cursor a una mano señalando */
+}
+
+.categoria img{
+    width: 100%;
+    height: 100%;/*SS [Se corta la imagen]: Ajustando la imagen a la altura del contenedor*/
+    object-fit: contain; /* Ajusta la imagen manteniendo su relación de aspecto original */
+    margin-bottom: 50px;
+}
+
+.categoria h2{
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    color: white;
+    -webkit-text-stroke-width: 0.5px; /* Ancho del contorno */
+    -webkit-text-stroke-color: black; /* Color del contorno */
+    font-size: 30px;
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina el margen por defecto del título */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    margin-top: 60px; /*** Buscar otra forma de evitar que el titulo se corte ***/
+    margin-bottom: 10px;
+}
+/* --- REGLAS --- */
+
+.col{
+    padding-bottom: 30px;
+}
+
+.col p{
+    margin-bottom: 40px;
+}
+
+.tituloReglas{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.reglasTitulos{
+    font-size: 20px;
+}
+
+/* --- NOSOTROS --- */
+.nosotros {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    
+}
+
+.nosotrosTexto {
+    font-size: 20px;
+    text-align: center; /* Centrar horizontalmente el texto */
+    padding: 50px; /* Espaciado interno */
+    width: 50%;
+}
+
+/* --- CONTACTO --- */
+
+.formulario {
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+    height: auto;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+}
+.formulario h1{
+    padding: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+    font-size: 45px;
+}
+form{
+    background-color: white;
+    width: 50%; /* Ancho del formulario */
+    max-width: 500px; /* Ancho máximo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Ajusta el ancho y alto del formulario para incluir bordes y rellenos */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombras con desplazamiento horizontal y vertical de 0px, desenfoque de 10px y color negro con opacidad de 0.5 */
+    display: flex;
+    flex-direction: column; /* Alinear los elementos del formulario en una columna */
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+}
+
+.formulario input[type="file"] {
+    width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
+}
+
+
+
+
+

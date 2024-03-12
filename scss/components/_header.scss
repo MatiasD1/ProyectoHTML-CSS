@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+    .logoPagina{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin: 10px;
+    }
+    .nombreSitio {
+        margin-left: 10px;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        justify-content: center;
+        color: white;
+        -webkit-text-stroke-width: 2px; /* Ancho del contorno */
+        -webkit-text-stroke-color: black; /* Color del contorno */
+    }
+    .logo{
+        width: 70px; 
+    }
+
+    nav {
+        margin-left: auto;
+        font-family: "Protest Strike", sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
+    
+        li {
+            padding: 0 20px;
+            height: 100%; /* Ajustar el tamaño de los elementos li al 100% de la altura de la lista */
+            display: flex;
+            align-items: center;
+    
+            a{
+                margin-right: 10px;
+                text-decoration: none; /* Elimina el subrayado de los enlaces */
+                color: white; /* Cambia el color del texto de los enlaces */
+            }
+        } 
+        
+        ul {
+            display: flex;
+            align-items: center;
+            height: 100%; /* Ajustar el tamaño de la lista al 100% de la altura del nav */
+            margin: 0;
+            padding: 0;
+        } 
+    
+    }
+         
+}
+

@@ -1,0 +1,31 @@
+/*Archivo para almacenar en clave-valor, un valor que se repita muchas veces en el código*/
+/*Ej: $colorPrincipal: #e8c5; y en el resto del proyecto simplemente pongo $colorPrincipal; */
+// Tambien pueden hacerse listas: 
+/*
+    $colores:
+        #ffffff
+        #red
+        #black
+
+    Y puedo llamarlo así-> color: nth($list: $colores, $2);
+    [nth() en Sass se utiliza para seleccionar un elemento específico de una lista
+    lista colores, color posicion 2 (red)]
+*/ 
+
+//Maps
+/*
+// Definición de la variable Map
+$colores: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  accent: #e74c3c
+);
+
+// Uso de la variable Map
+.elemento {
+  background-color: map-get($colores, primary);
+  o en su forma desarrollada: background-color: map-get($map: $colores, $key: primary);
+    
+}
+
+*/
